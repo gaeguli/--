@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JSArirang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JSArirangHON-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSArirangHON-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height : 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(41, 37, 37);
+    display: flex;
+    /* overflow: hidden; */
+}
+.size{
+    width: 100vw;
+    height:10000px;
+}
+.ganpan{
+    font-family: "KCC-Ganpan";
+}
+
+.ganpan a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+.headee{
+    font-family: 'KCC-Ganpan';
+    font-size: 30px;
+}
+
+
+.one{
+    font-size: 50px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    z-index:1000;
+}
+.main_one{
+    margin-top:50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.img_one{
+    margin-top: 100px;
+    width: 700px;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.img_two{
+    margin: 20px;
+    margin-left: 50px;
+    margin-bottom: -20px;
+    width: 600px;
+    height: auto;
+}
+.text_one{
+    margin-top: 30px;
+    font-family: 'JSArirang-Regular';
+    animation-fill-mode: forwards;
+    color: white;
+    font-size:170px;
+    margin-top: 110px;
+    margin-left: 300px;
+    opacity: 0;
+    transition: all 2s;
+}
+.text_two{
+    font-family: 'JSArirangHON-Regular';
+    color: white;
+    font-size: 120px;
+    opacity: 0;
+    transition: all 1.5s;
+    margin-left: -70px;
+}
+.text_three{
+    font-family: 'JSArirangHON-Regular';
+    margin-top: -230px;
+    color: white;
+    font-size: 120px;
+    opacity: 0;
+    transition: all 1.5s;
+    margin-left: 40px;
+}
+/* .text_four{
+    font-family: 'JSArirangHON-Regular';
+    margin-top: -230px;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 1.5s;
+    margin-left: -150px;
+} */
+.first_p{
+    font-family: 'JSArirang-Regular';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: all 1.5s;
+    margin-top: 450px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aa{
+    font-size: 30px;
+    text-align: right;
+    opacity: 0;
+    transition: all 5.0s;
+
+}
+.wrapper {
+    text-align: center;
+    margin-top: 150px;
+}
+.btn{
+    width: 250px;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'JSArirang-Regular';
+    background-color:whitesmoke;
+    border: 0;
+}
+
+.wrapper2{
+    text-align: center;
+    margin-top: 100px;
+}
+.btn2{
+    width: 250px;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'JSArirang-Regular';
+    background-color:whitesmoke;
+    border: 0;
+    margin-top: -40px;
+}
+.img_three{
+    width: 500px;
+    margin-top: 300px;
+    margin-right: 100px;
+}
+.second_p{
+    font-family: 'JSArirangHON-Regular';
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 3.0s;
+}
+.main_t{
+    font-family: 'JSArirang-Regular';
+    font-size: 80px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.img_4{
+    width: 600px;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+.img_5{
+    width: 500px;
+    margin-top: 300px;
+    margin-right: 100px;
+    /* position: fixed; */
+
+    
+}
+.p3{
+    font-family: 'JSArirangHON-Regular';
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 3.0s;
+}
+.p4{
+    font-family: 'JSArirangHON-Regular';
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 3.0s;
+}
+.p5{
+    font-family: 'JSArirang-Regular';
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    opacity: 0;
+    transition: all 3.0s;
+}
+.typing-animation{
+    margin-top: 100px;
+}
+.p6{
+    font-family: 'JSArirang-Regular';
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}

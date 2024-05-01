@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장영실 과학관</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="size">
+
+        <header class="one">
+            <div style="background-color: white;">
+                <span class="ganpan" id="main"><a>&nbsp;장영실 과학관</a></span>
+                <span class="ganpan" id="box1"><a>&nbsp;&nbsp;&nbsp;바로가기</a></span>
+                <div id="box" style="background-color: white; display: none;">
+                    <span style="margin-left: 10px;" class="headee" onclick="window.scrollBy({top: section1.getBoundingClientRect().top, behavior: 'smooth'});">장영실을 아끼는 왕들</span>
+                    <span style="margin-left: 10px;" class="headee" onclick="window.scrollBy({top: section2.getBoundingClientRect().top, behavior: 'smooth'});">조선 최초의 혼천의</span>
+                    <span style="margin-left: 10px;" class="headee" onclick="window.scrollBy({top: section3.getBoundingClientRect().top, behavior: 'smooth'});">양부일구</span>
+                    <span style="margin-left: 10px;" class="headee" onclick="window.scrollBy({top: section4.getBoundingClientRect().top, behavior: 'smooth'});">자격루</span>
+                    <span style="margin-left: 10px;" class="headee" onclick="window.scrollBy({top: section5.getBoundingClientRect().top, behavior: 'smooth'});type();">쫓겨나는 장영실</span>
+                </div>
+            </div>
+            
+        </header>
+ 
+        <div class="main_one">
+            <img src="one.webp" class="img_one">
+            <p class="text_one">장영실<br><span class="text_two">조선 최고의</span><br><span class="text_three">기술자</p>
+        </div>
+
+        <div class="wrapper">
+            <button class="btn" id="button1">다음으로</button>
+            <div class="line"></div>
+        </div>
+
+        <div id="one" style="margin-top: 300px;"></div>
+
+        <div class="first_p" >
+            <div>
+                <p>행 사직 장영실은 그 아비가 본래 원나라의 소주·항주사람이고,<br>어미는 기생이였는데,</p>
+                <p>공교한 솜씨가 보통 사람에 뛰어나므로 태종께서 보호하시었고,<br>나도 역시 이를 아낀다.</p>
+                <p class="aa">세종실록 세종 15년</p>
+            </div> 
+            <div class="gifbox">
+                <img src="gifone.gif" class="img_two">
+            </div>
+        </div>
+        <div class="wrapper2">
+            <button class="btn2" id="button2">다음으로</button>
+            <div class="line">
+        </div>
+        <div id="two" style="margin-top: 300px;"></div>
+        <div class="second_p">
+            <div>
+                <img src="혼천의.webp" class=img_three id="img_three" onclick="changeImage()">
+            </div>
+            <div>
+                <p class="main_t">혼천의</p><br>
+                <p>천체 관측 기구로 혼의기, 선기옥형으로도 불리며 태양과 달,</p><br>
+                <p>수성, 금성, 화성, 목성, 토성의 위치를 관측하는데 사용되었다.</p>    
+            </div>
+        </div>
+        <div class="wrapper2">
+            <button class="btn2" id="button3">다음으로</button>
+        </div>
+        <div id="three" style="margin-top: 300px;"></div>
+        <div class="p3">
+            <div>
+                <p class="main_t">양부일구</p>
+                <p>하늘을 바라보는 가마솥 해시계라는 뜻으로,</p><br>
+                <p>12지신으로 표시하여 백성들이 쉽게 시간을 읽을 수 있게 하였다.</p>
+            </div>
+            <div>
+                <img src="앙부일구.jpg" class="img_4">
+            </div>
+        </div>
+        <div class="wrapper2">
+            <button class="btn2" id="button4">다음으로</button>
+        </div>
+        <div id="pp4" style="margin-top: 200px;"></div>
+
+        <div class="p4" id="four">
+            <div>
+                <p class="main_t">자격루</p>
+                <p>시간에 따라 종과 징, 북이 저절로 울리게 만들었고,</p>
+                <p>인형이 시간을 알려주는 표를 들고 나타나게 되어있는 정교한 자동시보장치 물시계이다.</p>
+            </div>
+            <div>
+                <img src="자격루.JPG" class="img_4">
+            </div>
+        </div>
+
+        <div class="wrapper2">
+            <button class="btn2" id="button5">다음으로</button>
+        </div>
+        <div id="pp5" style="margin-top: 300px;"></div>
+        <div class="p5">
+            <div>
+                <img src="giftwo.gif" class="img_5">
+            </div>
+
+            <div class="typing-animation">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <p id="mintext1" style="font-size: 30px; text-align: right; opacity: 0; transition: all 10.0s;">세종실록 세종 24년</p>
+            </div>
+        </div>
+        <div id="pp6" style="margin-top: 300px;"></div>
+        <div class="p6">
+            <div>
+                <img src="gifthree.gif" class="img_5">
+            </div>
+            <div class="typing-animation">
+                <div id="line3"></div>
+                <div id="line4"></div>
+                <p id="mintext2" style="font-size: 30px; text-align: right; opacity: 0; transition: all 10.0s;">세종실록 세종 24년</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('img_three');
+            image.src = "만원.jpg";
+            image.onclick = null;
+            document.getElementById('img_three').style.marginTop = "500px";
+        }
+
+    
+        
+    const button1 = document.getElementById('button1');
+    const section1 = document.getElementById('one');
+
+    button1.addEventListener('click', () => {
+        window.scrollBy({top: section1.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+    const button2 = document.getElementById('button2');
+    const section2 = document.getElementById('two');
+
+    button2.addEventListener('click', () => {
+        window.scrollBy({top: section2.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+    const button3 = document.getElementById('button3');
+    const section3 = document.getElementById('three');
+
+    button3.addEventListener('click', () => {
+        window.scrollBy({top: section3.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+    const button4 = document.getElementById('button4');
+    const section4 = document.getElementById('pp4');
+
+    button4.addEventListener('click', () => {
+        window.scrollBy({top: section4.getBoundingClientRect().top, behavior: 'smooth'});
+    });
+
+    const button5 = document.getElementById('button5');
+    const section5 = document.getElementById('pp5');
+
+    button5.addEventListener('click', () => {
+        window.scrollBy({top: section5.getBoundingClientRect().top, behavior: 'smooth'});
+        type();
+    });
+
+        document.getElementById("main").addEventListener('click', function(event) {
+            event.preventDefault();
+            window.scrollTo(0, 0)
+            window.location.reload();
+        });
+
+        document.getElementById("box1").addEventListener('mouseenter', function(event) {
+            event.preventDefault();
+            var box = document.getElementById("box");
+            box.style.display = "block";
+        });
+        
+        document.getElementById("box").addEventListener('mouseleave', function(event) {
+            event.preventDefault();
+            var box = document.getElementById("box");
+            var isInside = box.contains(event.relatedTarget);
+            if (!isInside) {
+                box.style.display = "none";
+            }
+        });
+        
+        document.getElementById("box").addEventListener('mouseenter', function(event) {
+            event.preventDefault();
+            var box = document.getElementById("box");
+            box.style.display = "block";
+        });
+        
+        document.getElementById("box").addEventListener('mouseleave', function(event) {
+            event.preventDefault();
+            var box = document.getElementById("box");
+            box.style.display = "none";
+        });
+
+        function type() {
+            const textLines = [
+                "대호군 장영실이 안여를 감조하였는데,",
+                "견실하지 못하여 허물어졌으므로 의금부에 내려 국문하게 하였다."
+            ];
+        
+            const line1Element = document.getElementById('line1');
+            const line2Element = document.getElementById('line2');
+        
+            let lineIndex = 0;
+            let letterIndex = 0;
+        
+            function typeLine() {
+                if (lineIndex === textLines.length) return;
+        
+                const currentLine = textLines[lineIndex];
+                
+                if (lineIndex === 0) {
+                    line1Element.textContent += currentLine[letterIndex];
+                } else {
+                    line2Element.textContent += currentLine[letterIndex];
+                }
+                
+                letterIndex++;
+        
+                if (letterIndex === currentLine.length) {
+                    lineIndex++;
+                    letterIndex = 0;
+                }
+        
+                setTimeout(typeLine, 100);
+            }
+        
+            typeLine();
+            setTimeout(() => {
+                const pp6Element = document.getElementById('pp6');
+                pp6Element.scrollIntoView({ behavior: 'smooth' });
+                type1();
+            }, textLines.length * 100 + 10000);
+        }
+
+        function type1() {
+            const textLines1 = [
+            "이 사람들의 죄는 불결에 관계되니,",
+            "마땅히 직첩을 회수하고 곤장을 집행하여 그 나마저 사람들을 징계해야 될 것입니다."
+            ];
+        
+            const line1Element1 = document.getElementById('line3');
+            const line2Element1 = document.getElementById('line4');
+        
+            let lineIndex1 = 0;
+            let letterIndex1 = 0;
+        
+            function typeLine1() {
+                if (lineIndex1 === textLines1.length) return;
+        
+                const currentLine1 = textLines1[lineIndex1];
+                
+                if (lineIndex1 === 0) {
+                    line1Element1.textContent += currentLine1[letterIndex1];
+                } else {
+                    line2Element1.textContent += currentLine1[letterIndex1];
+                }
+                
+                letterIndex1++;
+        
+                if (letterIndex1 === currentLine1.length) {
+                    lineIndex1++;
+                    letterIndex1 = 0;
+                }
+        
+                setTimeout(typeLine1, 100);
+            }
+        
+            typeLine1();
+        }
+
+        let observer = new IntersectionObserver((e)=>{
+            e.forEach((box)=>{
+                if (box.isIntersecting){
+                    box.target.style.opacity = 1;
+                }
+                else{
+                    box.target.style.opacity = 0;
+                }
+            });
+        });
+        let img = document.querySelector('.img_one');
+        let paragraph = document.querySelector('.text_one');
+        let paragraph1 = document.querySelector('.text_two');
+        let paragraph2 = document.querySelector('.text_three');
+        let paragraph3 = document.querySelector('.first_p');
+        let paragraph4 = document.querySelector('.aa');
+        let paragraph5 = document.querySelector('.second_p');
+        let paragraph6 = document.querySelector('.p3');
+        let paragraph7 = document.querySelector('.p4');
+        let paragraph8 = document.querySelector('.p5');
+        let paragraph9 = document.querySelector('#mintext1');
+        let paragraph10 = document.querySelector('#mintext2');
+
+
+        observer.observe(img);
+        observer.observe(paragraph);
+        observer.observe(paragraph3);
+        observer.observe(paragraph4);
+        observer.observe(paragraph5);
+        observer.observe(paragraph6);
+        observer.observe(paragraph7);
+        observer.observe(paragraph8);
+        observer.observe(paragraph9);
+        observer.observe(paragraph10);
+        
+
+
+        setTimeout(function() {
+            observer.observe(paragraph1);
+        }, 1500);
+        setTimeout(function() {
+            observer.observe(paragraph2);
+        }, 2500);
+    </script>
+</body>
+</html>
